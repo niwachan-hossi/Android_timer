@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">timer</string>
+
+    <string name="text_lv_second">秒</string>
+    <string name="text_lv_minutes">分</string>
+
+    <string name="text_lv_start">スタート</string>
+    <string name="text_lv_reset">リセット</string>
+
+    <string name="text_lv_up_second">+10秒</string>
+    <string name="text_lv_down_second">-10秒</string>
+    <string name="text_lv_up_minutes">+1分</string>
+    <string name="text_lv_down_minutes">-1分</string>
+</resources>
