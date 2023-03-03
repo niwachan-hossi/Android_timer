@@ -1,1 +1,3 @@
 # Android_timer
+
+タイマーアプリです。
