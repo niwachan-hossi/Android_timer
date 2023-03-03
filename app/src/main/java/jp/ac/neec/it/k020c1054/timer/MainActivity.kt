@@ -1,5 +1,6 @@
 package jp.ac.neec.it.k020c1054.timer
 
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         val bt_up_minutes = findViewById<Button>(R.id.bt_up_minutes)
         val bt_down_minutes = findViewById<Button>(R.id.bt_down_minutes)
 
+        lateinit var mp: MediaPlayer
+        mp = MediaPlayer.create(this, R.raw.ring)
+
 
         countTextView.text = second_minutes_converter(startTime)
 
@@ -45,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                     bt_down_second.isEnabled = true;
                     bt_up_minutes.isEnabled = true;
                     bt_down_minutes.isEnabled = true;
+                    mp.start()
 
                 }
             }
